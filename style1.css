@@ -1,13 +1,21 @@
-img{
+.img1{
 width: 200px;
 border-radius: 250px;
 float: left;
 margin-right: 10px;
 }
+
 .username{
 font-weight: bold;
 }
+
 em{
 color: red;
 font-style: normal;
 }
+
+.img2{
+width: 300px;
+  height: 400px;
+}
+
