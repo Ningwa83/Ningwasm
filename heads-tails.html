@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+  <style>
+body{
+background-color: rgb(25, 25, 25);
+color: white;
+}
+.move-icon{
+height: 180px;
+}
+.move-button{
+background-color: transparent;
+
+height: 280px;
+width: 280px;
+border-radius:140px;
+margin-right: 30px;
+cursor: pointer;
+}
+.chose{
+font-size: 35px;
+font-weight: bold;
+margin-top: 50px;
+}
+.result{
+font-size: 35px;
+font-weight: bold;
+margin-top: 50px;
+}
+
+  </style>
+</head>
+<body>
+
+
+ <button class="move-button" onclick=" document.querySelector('.js-chose').innerHTML = 'You chose Head';
+coinToss();
+"><img src="heads.png" class="move-icon"></button>
+ 
+<button class="move-button" onclick=" 
+document.querySelector('.js-chose').innerHTML = 'You chose Tail';
+coinToss();
+"><img src="tails.png" class="move-icon"></button>
+ <p class="js-chose chose"></p>
+<p class="js-result result"></p>
+ 
+
+<script src="heads-tails.js">
+
+</script>
+
+</body>
+</html>
