@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ningwasm</title>
+ .box1{
+	height: 200px;
+	width: 400px;
+	background-color: green;
+	font-size: 15px;
+	color: white;
+	margin-left: 30px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 50%;
+	}
+	
+	.added-class{
+	height: 400px;
+	width: 200px;
+	background-color: dodgerblue;
+	font-size: 15px;
+	color: white;
+	margin-left: 100px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 50%;
+	}
 </head>
 <link href="style1.css" rel="stylesheet"/>
  <body>
@@ -33,6 +56,31 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
    
 </p>
 <a href="#">Jump to Top^</a>
-</body>
+
+  <div class="box1 js-box1">o</div>
+ </body>
+<script>
+	
+    function autoShow(){
+setInterval(function(){
+display();
+},1000);
+}
+ function display(){
+		const inputElement = document.querySelector('.js-box1');
+
+	if(inputElement.innerHTML === 'o'){
+	inputElement.innerHTML = 'c';
+	inputElement.classList.add('added-class');
+	}
+	else{
+	inputElement.innerHTML = 'o';
+	inputElement.classList.remove('added-class');
+	
+	}
+}
+autoShow();
+
+</script>
 
 </html>
