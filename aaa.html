@@ -49,18 +49,17 @@ let totalEntryMinute = 0;
 const inputElement1 = document.querySelector('.entry-hour');
 const inputEntryHour = Number(inputElement1.value);
 const entryHourToMinute = inputEntryHour * 60; 
-alert(entryHourToMinute);
+
 
 
 
 const inputElement2 = document.querySelector('.entry-minute');
 const inputEntryMinute = Number(inputElement2.value);
-alert(inputEntryMinute);
+
 document.querySelector('.show-entry').innerHTML = `${inputEntryHour}:${inputEntryMinute}`;
 
 	totalEntryMinute = entryHourToMinute + inputEntryMinute;
 	
-alert(totalEntryMinute);
 	}
 
 
@@ -72,12 +71,12 @@ alert(totalEntryMinute);
 const inputElement3 = document.querySelector('.exit-hour');
 const inputExitHour = Number(inputElement3.value);
  const exitHourToMinute = inputExitHour * 60;
-alert(exitHourToMinute);
+
 
 
 const inputElement4 = document.querySelector('.exit-minute');
 const inputExitMinute = Number(inputElement4.value);
-alert(inputExitMinute);
+
 
 
 const inputFreeMinute = Number(document.querySelector('.free-minute').value);
@@ -86,18 +85,16 @@ const inputFreeMinute = Number(document.querySelector('.free-minute').value);
 document.querySelector('.show-exit').innerHTML = `${inputExitHour}:${inputExitMinute}`;
 
 totalExitMinute = exitHourToMinute + inputExitMinute - inputFreeMinute;
-alert(totalExitMinute);
+
 
 //calculation part
 
 const totalMinute = totalExitMinute - totalEntryMinute;
-alert(totalMinute);
+
 
 		const z = totalMinute / 60;
 	
 const p = z.toFixed(2);
-
-alert(p);
 
 
 const rate = Number(document.querySelector('.input-rate').value);
