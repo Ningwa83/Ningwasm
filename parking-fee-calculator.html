@@ -4,15 +4,18 @@
 <head>
 
    <style>
-		.css-input{
+		.css-input1{
 		width: 200px;
 		}
 	   .confirm-button{
 		   background-color: black;
 		   color: white;
-		   height: 20px;
+		   height: 30px;
 		   width: 70px;
-		   border-radius: 20px;
+		   border-radius: 15px;
+	   }
+	   .css-input{
+		   width: 100px;
 	   }
 
 	</style>
@@ -21,20 +24,20 @@
 <body>
  <p>Parking Fee Calculator</p>
 
- <input class="css-input free-minute" type = "number" placeholder = "enter complementary parking mins">
- <input class="input-rate" type="number" placeholder="enter hourly rate">
+ <input class="css-input1 free-minute" type = "number" placeholder = "enter complementary parking mins"><br>
+ <input class="css-input input-rate" type="number" placeholder="enter hourly rate"><br>
  
  <p>enter entry hour and minute in the separate boxes below</p>
 
-<input type = "number" placeholder = "entry hour" class = "entry-hour">
-<input type = "number" placeholder = "entry min" class = "entry-minute">
+<input type = "number" placeholder = "entry hour" class = "css-input entry-hour">
+<input type = "number" placeholder = "entry min" class = "css-input entry-minute">
 
  <p class = "show-entry">your entry:</p>
 
 
  <p>enter exit hour and minute in the separate boxes below</p>
-<input type = "number" placeholder = "exit hour" class = "exit-hour">
-<input type = "number" placeholder = "exit min" class = "exit-minute">
+<input type = "number" placeholder = "exit hour" class = "css-input exit-hour">
+<input type = "number" placeholder = "exit min" class = "css-input exit-minute">
 
 
 <p class = "show-exit">your exit:</p>
