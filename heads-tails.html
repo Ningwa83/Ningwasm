@@ -3,56 +3,91 @@
 <title></title>
 <head>
   <style>
+  
 body{
 background-color: rgb(25, 25, 25);
 color: white;
-font-family: arial;
 }
 .move-icon{
-height: 180px;
+height: 150px;
 }
+.move-tossed-icon{
+height: 210px;
+margin-top: 50px;
+margin-left: 250px;
+}
+
 .move-button{
 background-color: transparent;
-
-height: 280px;
-width: 280px;
-border-radius:140px;
-margin-right: 30px;
-cursor: pointer;
-}
-.chose{
-font-size: 35px;
-font-weight: bold;
+height: 250px;
+width: 250px;
+border-radius:125px;
+margin-left: 50px;
 margin-top: 50px;
+cursor: pointer;
+color: transparent;
+}
+.auto-play-button{
+margin-left: 50px;
+height: 50px;
+font-size: 35px;
+border-radius: 25px;
+
+}
+.is-playing{
+background-color: green;
+color: white;
+font-size: 35px;
+height: 100px;
+margin-left: 50px;
 }
 .result{
-font-size: 35px;
-font-weight: bold;
-margin-top: 50px;
+font-size: 70px;
+margin-left: 50px;
+}
+.score{
+font-size: 30px;
+margin-left: 50px;
+}
+.reset-score-button{
+margin-left: 100px;
+height: 50px;
+border-radius: 25px;
+background-color: green;
+color: yellow;
+font-size: 30px;
+}
+.tossed{
+margin-left: 270px;
+font-color: white;
 }
 
-  </style>
+
+
+
+   </style>
 </head>
 <body>
-
-
- <button class="move-button" onclick=" document.querySelector('.js-chose').innerHTML = 'You chose Head';
-coinToss();
-"><img src="heads.png" class="move-icon"></button>
+  <p style="margin-left: 50px; font-size: 50px; color: #90EE90; font-weight: bold">KHELNU HOS 10 CHOTI RA JITNUHOS DIPAWALIKO UPAHAR-HARU</p>
+<button class="move-button js-heads-button" ><img src="heads.png" class="move-icon"></button>
  
-<button class="move-button" onclick=" 
-document.querySelector('.js-chose').innerHTML = 'You chose Tail';
-coinToss();
-"><img src="tails.png" class="move-icon"></button>
-<p class="js-chose chose"></p>
-<p class="js-result result"></p><br>
+<button class="move-button js-tails-button"><img src="tails.png" class="move-icon"></button>
 
-  
+
  
+<p class="tossed js-tossed"></p>
+
+ <p class="result js-result"></p>
+ <p class="score js-score"></p>
+ 
+ <button class="reset-score-button js-reset-score-button">Reset Score</button>
+
+<button class="auto-play-button js-auto-play-button">Auto Play</button>
+<p class="what"></p>
 
 <script src="heads-tails.js">
 
 </script>
-<a style="color: green; font-size: 30px; margin-left: 70%" href= "index.html">Home Page</a>
+
 </body>
 </html>
