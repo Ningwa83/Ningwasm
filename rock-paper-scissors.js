@@ -184,11 +184,11 @@ function updateScoreElement(){
 document.querySelector('.js-score').innerHTML = `plays: ${score.plays}, wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
 if(score.plays === 15)
     {
-if(score.wins >= 10)
+if(score.wins >= 8)
 {
   alert(`Congrats! You won 🍲🥘  with Ningwa. Screenshot this pop up and send to Ningwa`);
 }
-else if(score.wins >= 5 && score.wins < 10)
+else if(score.wins >= 5 && score.wins < 8)
 {
   alert(`Congrats! You won ☕️☕️ with Ningwa`);
   }
