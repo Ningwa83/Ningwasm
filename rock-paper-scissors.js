@@ -182,14 +182,23 @@ document.querySelector('.js-moves').innerHTML = `You <img src="${playerMove}.PNG
 
 function updateScoreElement(){
 document.querySelector('.js-score').innerHTML = `plays: ${score.plays}, wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`;
-if(score.wins === 5 && score.plays <= 15){alert(`Congrats! You won ☕️☕️  with Ningwa. Screenshot this pop up and send to Ningwa`);
-resetScore();
+if(score.plays === 15)
+    {
+if(score.wins >= 10)
+{
+  alert(`Congrats! You won 🍲🥘  with Ningwa. Screenshot this pop up and send to Ningwa`);
 }
-else if(score.wins < 5 && score.plays === 15){
+else if(score.wins >= 5 && score.wins < 10)
+{
+  alert(`Congrats! You won ☕️☕️ with Ningwa`);
+  }
+  else if(score.wins < 5)
+  {
 alert('Sorry! its not your day');
-resetScore();
-}
-}
+  }
+   resetScore(); 
+    }
+      }
 
 
       /* function2 generating computerMove*/
